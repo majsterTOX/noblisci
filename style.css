@@ -1,0 +1,61 @@
+:root {
+  --background: #f2ecff;
+  --font: #393939;
+}
+body {
+  background-color: var(--background);
+  color: var(--font);
+  font-family: "Open Sans";
+  font-size: 1rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.hero,
+main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main {
+  width: 85%;
+  max-width: 85%;
+  margin: 25px auto;
+}
+.hero * {
+  margin-bottom: 1em;
+}
+.hero__name{
+  font-size: 2em;
+}
+.hero__achievements{
+  margin-left: 50px;
+  font-size: 1.1em;
+  order: 1;
+}
+.hero__portrait img {
+  width: 100%;
+  object-fit: cover;
+  order: 0;
+}
